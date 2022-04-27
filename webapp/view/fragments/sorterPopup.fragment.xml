@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		id="sortDialog"
+		confirm="onSortEmployeesConfirm">
+		<sortItems>
+			<ViewSettingsItem
+				id="sortFirstName"
+				text="{i18n>masterSort1}"
+				key="first_name"
+                selected="true"/>
+            <!-- <ViewSettingsItem
+				id="sortLastName"
+				text="{i18n>masterSort1}"
+				key="first_name"
+                selected="true"/>
+            <ViewSettingsItem
+				id="activity"
+				text="{i18n>masterSort1}"
+				key="first_name"
+                selected="true"/> -->
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

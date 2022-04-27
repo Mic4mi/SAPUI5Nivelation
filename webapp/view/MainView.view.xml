@@ -7,18 +7,18 @@
     <Shell id="shell">
         <App id="app">
             <pages>
-                <Page id="page" title="{i18n>title}">
-                    	<Table id="idProductsTable"
+                <Page id="page" title="{i18n>appTitle}">
+                    <Table id="idEmployeesTable"
                         inset="false"
                         items="{EmployeesModel>/}">
                         <headerToolbar>
-                            <OverflowToolbar id="ovTolTable">
-                                <content>
-                                    <Title id="tableTitle" text="{i18n>title}" level="H2"/>
-                                    <ToolbarSpacer id="mainTableTS"/>
-                                    <Button id="btn1" text="{i18n>btn1}" type="Accept" press="onPressBtn1"/>
-                                    <Button id="btn2" text="{i18n>btn2}" type="Reject"/>
-                                </content>
+                            <OverflowToolbar id="ovTolTable">                              
+                                <Title id="tableTitle" text="{i18n>title}" level="H2"/>
+                                <ToolbarSpacer id="mainTableTS"/>
+                                <SearchField id="mySearchField" liveChange="onSearchNames" placeholder="{i18n>fullName}" width="10rem"/>
+                                <Button id="sortButton" press="onOpenSortPopUp" icon="sap-icon://sort" type="Transparent" tooltip="{i18n>sortTooltip}" />
+                                <!-- <Button id="btn1" text="{i18n>btn1}" type="Accept" press="onPressBtn1"/>
+                                <Button id="btn2" text="{i18n>btn2}" type="Reject"/>                                -->
                             </OverflowToolbar>
                         </headerToolbar>
                         <columns>
